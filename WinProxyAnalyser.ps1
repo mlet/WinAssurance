@@ -1,7 +1,7 @@
 #----------------------------------------------------------------
 # Title   : Micorsoft Windows Proxy Setting Analyser
 # 
-# Version : 0.3
+# Version : 0.4
 # Author  : Oliver Kunz
 # 
 # Permissions Required:
@@ -20,7 +20,7 @@ $value = (Get-ItemProperty $PATH).DefaultConnectionSettings[$INDEX]
 
 switch ($value) {
     # 0001	1	All LAN Settings Disabled
-    1 {"Value: 1 => All Settings Disabled"}
+    1 {"Value: 1 => All Settings Disabled [DISABLED]"}
 
     # 0011	3	Only Proxy Settings Enabled (PROXY)
     3 {"Value: 3 => Only Proxy Settings Enabled [PROXY]"}
@@ -29,22 +29,22 @@ switch ($value) {
     5 {"Value: 5 => Only 'Use automatic configuraiton script' Enabled [PAC]"}
 
     # 0111	7	PAC and PROXY Enabled
-    7 {"Value: 7 => PROXY and PAC Enabled"}
+    7 {"Value: 7 => PAC and PROXY Enabled [PAC-PROXY]"}
     
     # 1001	9	Only "Automatically detect settings" Enabled (WPAD)
     9 {"Value: 9 => Only 'Automatically detect settings' Enabled [WPAD]"}
     
     # 1011	11	WPAD and PROXY Enabled
-    11 {"Value: 11 => WPAD and PROXY Enabled"}
+    11 {"Value: 11 => WPAD and PROXY Enabled [WPAD-PROXY]"}
     
     # 1101	13	WPAD and PAC Enabled
-    13 {"Value: 13 => WPAD and PAC Enabled"}
+    13 {"Value: 13 => WPAD and PAC Enabled [WPAD-PAC]"}
     
     # 1111	15	WPAD and PAC and PROXY Enabled
-    15 {"Value: 15 => WPAD and PROXY and PAC Enabled"}
+    15 {"Value: 15 => WPAD and PAC and PROXY Enabled [WPAD-PAC-PROXY]"}
     
     # default
-    default {"Value: " + $value + " => Value is unknown; Please contact author"}
+    default {"Value: " + $value + " => Value is unknown; Please contact author [UNKNOWN]"}
 }
 
 # Reference::
