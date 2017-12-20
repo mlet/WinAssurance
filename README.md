@@ -27,3 +27,7 @@ The table below maps out the settings and associated nibbles. The nibbles appear
 | 1011 | 11 | WPAD and PROXY Enabled | WPAD and PROXY Enabled | *WPAD-PROXY* |
 | 1101 | 13 | WPAD and PAC Enabled | WPAD and PAC Enabled | *WPAD-PAC* |
 | 1111 | 15 | WPAD and PAC and PROXY Enabled | WPAD and PAC and PROXY Enabled | *WPAD-PAC-PROXY* |
+
+Tested on:
+* Windows 7
+* Windows 10
