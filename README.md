@@ -1,2 +1,2 @@
 # WinAssurance
-Windows Assurance Scripts
+This is a collection Windows Assurance Scripts
