@@ -31,3 +31,9 @@ The table below maps out the settings and associated nibbles. The nibbles appear
 Tested on:
 * Windows 7
 * Windows 10
+
+## WinWlanPSK.ps1
+WinWlanPSK.ps1 lists all local WLAN profiles which then can be selected for displaying the PSK (__CAUTION:__ PSK is displayed in cleartext).
+
+Tested on:
+* Windows 10
